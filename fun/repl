@@ -1,6 +1,0 @@
--- A function to replace in a string, a token with a value.
--- Usage : repl <token> <replacement> <the target string>
-
-repl :: [Char] -> [Char] -> [Char] -> [Char]
-repl target token replacement=Data.List.intercalate "" $ map (\a->if a==token then replacement else a) $ split (onSublist token) target
-
